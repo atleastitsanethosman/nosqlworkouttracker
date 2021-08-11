@@ -4,13 +4,6 @@ const router = require('express').Router();
 //requests to handle CRUD Operations in MongoDB
 
 //GET all workout data for last workout function
-// router.get("/workouts", (req, res) => {
-//     db.find().sort({"day": 1}).then((data) => {
-//         res.status(200).json(data);
-//     }).catch((err) => {
-//         res.status(400).json(err);
-//     });
-// });
 
 router.get("/workouts", (req, res) => {
   db.aggregate([
